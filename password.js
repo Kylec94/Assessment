@@ -5,25 +5,14 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
+console.log('Welcome')
 
-
-reader.question("Welcome to the Password Validator tool! What is your password?", function(input){
-	tokens = input.split(' ');
-	
-	password = tokens[10];
-	
-
-
-	// This line closes the connection to the command line interface.
-	reader.close()
-
-});
-let password = 
-
-if(password >= 10){
-    console.log('Your password works!')
-} else {
-    console.log('Your password is not long enough')
-}
-
-// just cant figure out how to check for actual letters or deal with that also calculator prewritten text i wasnt sure what to add or remove etc to work with letters instead of numbers and math symbols
+reader.question('please enter your password!', function         //I was just so lost on what I should or shouldnt have been using from the pre-made starting code and not understanding functions yet in general but this made some sense
+(response){
+    if(response.length >= 10){
+        console.log('you win')
+    } else {
+        console.log('you lost')
+    }
+    reader.close()
+})

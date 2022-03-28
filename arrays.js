@@ -5,7 +5,8 @@ const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
 
-let colorCopy = faveColors.slice()
+// changed let to const
+const colorCopy = faveColors.slice()
 console.log(colorCopy)
 
 //////////////////PROBLEM 2////////////////////
@@ -13,8 +14,10 @@ console.log(colorCopy)
 
 //CODE HERE
 
-faveColors.push('blue')
-console.log(faveColors)
+// In this second version I changed from faveColors.push to colorCopy.push because for some reason I just misread that
+
+colorCopy.push('blue')
+console.log(colorCopy)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,8 +29,9 @@ console.log(faveColors)
 
 //CODE HERE
 
+// changed let to const 
 const numbers = [1, 2, 3, 4, 5]
-let middleNums = numbers.splice(1, 3)
+const middleNums = numbers.splice(1, 3)
 console.log(middleNums)
 
 
@@ -41,38 +45,19 @@ console.log(middleNums)
   to the answers array. 
 */
 
+// Added "let" to "i = 0". In previous "else" statement code attempt I missed the opening and closing {} after the "if(bigOrSmallArray[i] > 100)" which I keep forgetting that even though it feels like you're opening another bracket before closing the first one, the first one actually is closed but just at the very bottom and will continue to move on down and maintain its "all encompassing" position. You probably saw that instantly but feels helpful to comment on problems
+
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
-// CODE HERE
+const answers = []
 
-// I was putting different attempts of code into comments because I couldn't get it to work so figured I would show all attempts and the third thing I tried which was just writing 2 different for loops even tho that seems inneficient...wasn't working before. But as I was about to just leave the problem it randomly does now so I'll just leave it at the top I suppose. I just dont know why else wouldnt work
-
-let answers = []
-
-for(i = 0; i < bigOrSmallArray.length; i++) {
-  if(bigOrSmallArray[i] > 100)
- answers.push('big');
-} 
-for(i = 0; i < bigOrSmallArray.length; i++){
-  if(bigOrSmallArray[i] <= 100) 
-  answers.push('small')
-}
-console.log(answers)
-
-// Below code gave unexpected token of "else"
-
-//  for(i = 0; i < bigOrSmallArray.length; i++) {
-//   if(bigOrSmallArray[i] > 100)
-//  answers.push('big');
-// } else {
-//   answers.push('small')
-// }
+for(let i = 0; i < bigOrSmallArray.length; i++){ 
+   if(bigOrSmallArray[i] > 100){
+     answers.push('big')
+   } else {
+     answers.push('small')
+   }
+ }
+ console.log(answers)
 
 
-// for(i = 0; i < bigOrSmallArray.length; i++) {
-//   if(bigOrSmallArray[i] > 100)
-//  answers.push('big');
-// } if(bigOrSmallArray[i] <= 100) {
-//   answers.push('small')
-// }
-//  console.log(answers)

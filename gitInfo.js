@@ -11,7 +11,7 @@
 
 //CODE HERE
 
-let gitDefinition = 'Git is a version control system and is a tool for developers to track and upload their code universally. Allows for coop coding and storage of small or large projects'
+const gitDefinition = 'Git is a version control system and is a tool for developers to track and upload their code universally. Allows for coop coding and storage of small or large projects'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -21,7 +21,7 @@ let gitDefinition = 'Git is a version control system and is a tool for developer
 
 //CODE HERE
 
-let gitHubDefinition = 'Code hosting platform for version control and collaboration.'
+const gitHubDefinition = 'Code hosting platform for version control and collaboration.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -31,7 +31,7 @@ let gitHubDefinition = 'Code hosting platform for version control and collaborat
 
 //CODE HERE
 
-let gitInitDefinition = 'puts code into a new repository'
+const gitInitDefinition = 'puts code into a new repository'
 
 
 //////////////////PROBLEM 4////////////////////
@@ -42,7 +42,7 @@ let gitInitDefinition = 'puts code into a new repository'
 
 //CODE HERE
 
-let gitCloneDefinition = 'targets existing repository and creates a clone'
+const gitCloneDefinition = 'targets existing repository and creates a clone'
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -52,7 +52,7 @@ let gitCloneDefinition = 'targets existing repository and creates a clone'
 
 //CODE HERE
 
-let gitStatusDefinition ='Git status displays the state of the working directory'
+const gitStatusDefinition ='Git status displays the state of the working directory'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -63,9 +63,11 @@ let gitStatusDefinition ='Git status displays the state of the working directory
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+// Missed that this problem wanted 2 different things. 
 
-let GitAddCode = 'git add .' 
+const gitAddDefinition = 'The git add command adds new or changed files in your working directory to the Git staging area.'
+
+const gitAddCode = 'git add .' 
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -76,9 +78,11 @@ let GitAddCode = 'git add .'
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+// I read the variable for gitCommitDefinition and made it but then read the instructions for what to do for gitCommitCode... I was definitely feeling short on time at this point and in a hurry to move on. Also think reading the green text messes with me 
 
-let gitCommitDefinition = 'git commit -m "initial commit'
+const gitCommitDefinition = 'The git commit command captures a snapshot of the projects currently staged changes'
+
+const gitCommitCode = 'git commit -m "initial commit'
 
 
 //////////////////PROBLEM 8////////////////////
@@ -89,4 +93,6 @@ let gitCommitDefinition = 'git commit -m "initial commit'
 
 //CODE HERE
 
-let gitPushDefinition = 'upload local repository content to a remote repository'
+const gitPushDefinition = 'upload local repository content to a remote repository'
+
+// changed all "let" to "const"
